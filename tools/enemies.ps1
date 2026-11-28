@@ -4,7 +4,7 @@ $enemies = [ordered]@{
     navy    = @{ master = 'sprites\agents\good_male_brown\navy_model_v2.png';                 H = 152; grab = $true; flex = $true; cell = @(480, 448); v2 = $true }   # tall muscular suit man
     polo    = @{ master = 'sprites\agents\good_male_white\polo_model_v2.png';                H = 112; grab = $false; v2 = $true; frames = @{ walk_front = 6; run_front = 6 } }   # short round polo man
     plum    = @{ master = 'sprites\agents\good_female_hijab\plum_model_v2.png';               H = 128; grab = $false; v2 = $true; frames = @{ walk_front = 6; walk_back = 6 } }   # plum suit, turban hijab
-    cream   = @{ master = 'sprites\agents\good_female_nohijab\good_female_nohijab_master_v4.png'; H = 150; grab = $false } # tall slim, black bob, mustard hoodie + jeans
+    cream   = @{ master = 'sprites\agents\good_female_nohijab\cream_model_v2.png';            H = 150; grab = $false; v2 = $true; frames = @{ walk_front = 6; walk_back = 6 } } # tall slim, black bob, mustard hoodie + jeans
     fighter = @{ master = 'sprites\agents\bad_male_brown\bad_male_brown_master_v2.png';      H = 130; grab = $false }   # street fighter, headband
     gangly  = @{ master = 'sprites\agents\bad_male_white\bad_male_white_master_v2.png';      H = 148; grab = $false }   # thin hunched
     sporty  = @{ master = 'sprites\agents\bad_female_hijab\bad_female_hijab_master_v3.png';  H = 118; grab = $true; cell = @(464, 352) }   # short sturdy sport-hijab woman

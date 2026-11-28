@@ -1,7 +1,7 @@
 // The world camera. The world is drawn through a zoomed-out camera (CONFIG.camera.zoom, about 0.71): 900 x 506 world units
 // are visible and rendered into the 640 x 360 screen. The camera follows Zee horizontally (with a little look-ahead in the
 // direction she faces) and is clamped to the level. It never scrolls vertically: the world is exactly one screen tall.
-import { CONFIG } from './config.js?v=202611281851';
+import { CONFIG } from './config.js?v=202611282241';
 
 export class Camera {
   constructor() { this.x = 0; this.px = 0; this.gx = 0; this.look = 0; this.ready = false; }

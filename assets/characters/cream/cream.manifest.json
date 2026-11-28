@@ -13,49 +13,101 @@
     "drawScale":  0.5,
     "facing":  "right",
     "strips":  {
-                   "a":  {
-                             "file":  "cream_a.png",
-                             "frames":  16,
-                             "cols":  8
-                         },
-                   "b":  {
-                             "file":  "cream_b.png",
-                             "frames":  16,
-                             "cols":  8
-                         },
-                   "c":  {
-                             "file":  "cream_c.png",
-                             "frames":  16,
-                             "cols":  8
-                         },
-                   "d":  {
-                             "file":  "cream_d.png",
-                             "frames":  16,
-                             "cols":  8
-                         },
-                   "w":  {
-                             "file":  "cream_w.png",
-                             "frames":  12,
-                             "cols":  8
-                         }
+                   "idle":  {
+                                "file":  "cream_idle.png",
+                                "frames":  8,
+                                "cols":  8
+                            },
+                   "walk":  {
+                                "file":  "cream_walk.png",
+                                "frames":  8,
+                                "cols":  8
+                            },
+                   "run":  {
+                               "file":  "cream_run.png",
+                               "frames":  8,
+                               "cols":  8
+                           },
+                   "punch":  {
+                                 "file":  "cream_punch.png",
+                                 "frames":  8,
+                                 "cols":  8
+                             },
+                   "kick":  {
+                                "file":  "cream_kick.png",
+                                "frames":  8,
+                                "cols":  8
+                            },
+                   "hit":  {
+                               "file":  "cream_hit.png",
+                               "frames":  16,
+                               "cols":  8
+                           },
+                   "defeat":  {
+                                  "file":  "cream_defeat.png",
+                                  "frames":  8,
+                                  "cols":  8
+                              },
+                   "throw":  {
+                                 "file":  "cream_throw.png",
+                                 "frames":  8,
+                                 "cols":  8
+                             },
+                   "idle_front":  {
+                                      "file":  "cream_idle_front.png",
+                                      "frames":  8,
+                                      "cols":  8
+                                  },
+                   "idle_back":  {
+                                     "file":  "cream_idle_back.png",
+                                     "frames":  8,
+                                     "cols":  8
+                                 },
+                   "walk_front":  {
+                                      "file":  "cream_walk_front.png",
+                                      "frames":  6,
+                                      "cols":  6
+                                  },
+                   "walk_back":  {
+                                     "file":  "cream_walk_back.png",
+                                     "frames":  6,
+                                     "cols":  6
+                                 },
+                   "run_front":  {
+                                     "file":  "cream_run_front.png",
+                                     "frames":  8,
+                                     "cols":  8
+                                 },
+                   "run_back":  {
+                                    "file":  "cream_run_back.png",
+                                    "frames":  8,
+                                    "cols":  8
+                                }
                },
     "animations":  {
                        "idle":  {
-                                    "strip":  "a",
+                                    "strip":  "idle",
                                     "from":  0,
                                     "to":  7,
                                     "fps":  8,
                                     "loop":  true
                                 },
                        "walk":  {
-                                    "strip":  "w",
+                                    "strip":  "walk",
                                     "from":  0,
                                     "to":  7,
-                                    "fps":  9.33,
+                                    "fps":  10,
                                     "loop":  true
                                 },
+                       "run":  {
+                                   "strip":  "run",
+                                   "from":  0,
+                                   "to":  7,
+                                   "fps":  14,
+                                   "loop":  true
+                               },
                        "punch":  {
-                                     "strip":  "b",
+                                     "strip":  "punch",
                                      "from":  0,
                                      "to":  7,
                                      "fps":  22,
@@ -66,9 +118,9 @@
                                                 ]
                                  },
                        "kick":  {
-                                    "strip":  "b",
-                                    "from":  8,
-                                    "to":  15,
+                                    "strip":  "kick",
+                                    "from":  0,
+                                    "to":  7,
                                     "fps":  22,
                                     "loop":  false,
                                     "active":  [
@@ -77,41 +129,82 @@
                                                ]
                                 },
                        "hurt":  {
-                                    "strip":  "c",
+                                    "strip":  "hit",
                                     "from":  0,
                                     "to":  3,
                                     "fps":  14,
                                     "loop":  false
                                 },
                        "knockdown":  {
-                                         "strip":  "c",
+                                         "strip":  "hit",
                                          "from":  4,
-                                         "to":  9,
-                                         "fps":  14,
+                                         "to":  7,
+                                         "fps":  10,
                                          "loop":  false
                                      },
                        "get_up":  {
-                                      "strip":  "c",
-                                      "from":  10,
+                                      "strip":  "hit",
+                                      "from":  8,
                                       "to":  15,
                                       "fps":  12,
                                       "loop":  false
                                   },
                        "defeat":  {
-                                      "strip":  "d",
+                                      "strip":  "defeat",
                                       "from":  0,
                                       "to":  7,
                                       "fps":  10,
                                       "loop":  false
                                   },
+                       "idle_front":  {
+                                          "strip":  "idle_front",
+                                          "from":  0,
+                                          "to":  7,
+                                          "fps":  8,
+                                          "loop":  true
+                                      },
+                       "walk_front":  {
+                                          "strip":  "walk_front",
+                                          "from":  0,
+                                          "to":  5,
+                                          "fps":  10,
+                                          "loop":  true
+                                      },
+                       "run_front":  {
+                                         "strip":  "run_front",
+                                         "from":  0,
+                                         "to":  7,
+                                         "fps":  14,
+                                         "loop":  true
+                                     },
+                       "idle_back":  {
+                                         "strip":  "idle_back",
+                                         "from":  0,
+                                         "to":  7,
+                                         "fps":  8,
+                                         "loop":  true
+                                     },
+                       "walk_back":  {
+                                         "strip":  "walk_back",
+                                         "from":  0,
+                                         "to":  5,
+                                         "fps":  10,
+                                         "loop":  true
+                                     },
+                       "run_back":  {
+                                        "strip":  "run_back",
+                                        "from":  0,
+                                        "to":  7,
+                                        "fps":  14,
+                                        "loop":  true
+                                    },
                        "throw_headset":  {
-                                             "strip":  "d",
-                                             "from":  8,
-                                             "to":  15,
+                                             "strip":  "throw",
+                                             "from":  0,
+                                             "to":  7,
                                              "fps":  18,
                                              "loop":  false,
                                              "release":  [
-                                                             3,
                                                              4
                                                          ]
                                          }

@@ -20,8 +20,8 @@
 //   light: { rim, rimAlpha, rimPx, lightX, lightY, wash, washAlpha, feet } = how Zee and the enemies are lit in this room
 //   (rim / wash are [r,g,b]); the game eases from one room's light to the next (see setLight in assets.js).
 //   doorRight is the door to the NEXT room: while it is locked the player cannot pass it; no door (or unlocked) = open.
-import { CONFIG } from './config.js?v=202611281851';
-import { VERSION } from './assets.js?v=202611281851';
+import { CONFIG } from './config.js?v=202611282241';
+import { VERSION } from './assets.js?v=202611282241';
 
 const C = CONFIG.camera, F = CONFIG.floor;
 export const LAYER_H = 507;                       // layer height in pixels (the view shows 506.25)
