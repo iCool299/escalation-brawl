@@ -1,8 +1,8 @@
 // Arcade HUD (early-2000s style): angled panels with white outlines, glossy bars, bold italic type.
 // Built from separate pieces drawn in game units, so it scales with the canvas at any resolution.
 // Top-left: portrait + HP bar + SP meter. Bottom-left: KO counter. All values come from the live game state.
-import { CONFIG } from './config.js?v=202611282245';
-import { VERSION } from './assets.js?v=202611282245';
+import { CONFIG } from './config.js?v=202611282249';
+import { VERSION } from './assets.js?v=202611282249';
 
 const portrait = new Image();
 portrait.src = 'assets/ui/zee_portrait.png?v=' + VERSION;

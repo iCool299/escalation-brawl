@@ -18,6 +18,6 @@ $h = [IO.File]::ReadAllText($p, $utf8)
 $h = [regex]::Replace($h, 'src="src/main\.js(\?v=[0-9a-z]+)?"', "src=`"src/main.js?v=$ver`"")
 [IO.File]::WriteAllText($p, $h, $utf8)
 git add -A
-git commit -m "$Message`n`nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" | Out-Null
+git commit -m "$Message`n`nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>" | Out-Null
 git push origin main
 Write-Host "released version $ver"
