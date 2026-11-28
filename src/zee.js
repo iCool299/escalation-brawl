@@ -1,7 +1,7 @@
 // Zee: the player character. A small state machine driven by input actions.
 // Movement, combat timing, and animation selection live here; art comes from the manifest (assets.js).
-import { CONFIG } from './config.js?v=202611282241';
-import { frameAt, drawAnim, drawShadow, LOOK } from './assets.js?v=202611282241';
+import { CONFIG } from './config.js?v=202611282245';
+import { frameAt, drawAnim, drawShadow, LOOK } from './assets.js?v=202611282245';
 
 const C = CONFIG.zee;
 // Front and back sheets are drawn as seen by the camera, so they are never mirrored (her badge and hand stay on the correct side).

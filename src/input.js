@@ -1,6 +1,6 @@
 // Unified input: keyboard on PC/laptop, floating joystick + buttons on touch devices.
 // The game only reads: input.axis (x,y in -1..1), input.run, and input.consume() (one-shot actions).
-import { CONFIG } from './config.js?v=202611282241';
+import { CONFIG } from './config.js?v=202611282245';
 
 export class Input {
   constructor(root = document) {
